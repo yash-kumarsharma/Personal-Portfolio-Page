@@ -30,12 +30,10 @@
 
     .shaddy {
         color: white;
-        transition: 0.5s linear;
     }
 
     .shaddy:hover {
         color: aqua;
-        transform: scale(1.3);
     }
 
     .colour {
@@ -60,11 +58,13 @@
         font-weight: 700px;
         font-size: 65px;
     }
+
     .title {
         width: 100%;
         font-weight: 700px;
         font-size: 76px;
     }
+
     .animate {
         animation: slide ease-in 3s 1 reverse;
     }
@@ -146,6 +146,11 @@
         color: white;
         font-size: 128px;
     }
+
+/* certificates hover */
+.hov:hover{
+    color: yellow;
+}
 </style>
 
 <body>
@@ -157,11 +162,11 @@
                     <a href="#" class="text-decoration-none shaddy ">Home</a>
                 </li>
             </ul>
-            <ul class="nav justify-content-end">
-                <li class="nav-item "><a href="#aboutt" class="nav-link mx-3 shaddy ">About</a></li>
+            <ul class="nav justify-content-end nav-underline ">
+                <li class="nav-item "><a href="#aboutt" class="nav-link mx-3 shaddy">About</a></li>
                 <!-- <li class="nav-item "><a href="#" class="nav-link text-white mx-2 ">Skills</a></li> -->
-                <li class="nav-item "><a href="#skilled" class="nav-link mx-3 shaddy ">Skills</a></li>
-                <li class="nav-item bg-primary "><a href="#connect" class="nav-link mx-3 shaddy text-white ">Contact</a>
+                <li class="nav-item "><a href="#skilled" class="nav-link mx-3 shaddy">Skills</a></li>
+                <li class="nav-item bg-primary "><a href="#connect" class="nav-link mx-3 text-white shaddy">Contact</a>
                 </li>
             </ul>
         </div>
@@ -196,9 +201,10 @@
                 </div>
             </div>
             <!-- right hand images start from here -->
-            <div class="col-sm-7 shadow-lg d-inline justify-content-evenly ">
-                <img src="picture.jpg" class=" img-fluid">
-                <img src="picture.jpg" class=" img-fluid">
+            <div class="col-sm-7 shadow-lg d-inline text-center pt-5 ">
+                <img src="picture3.jpg" class=" img-fluid mx-auto d-inline w-25 ">
+                <img src="picture2.jpg" class=" img-fluid mx-auto d-inline w-25  ">
+                <img src="picture.jpg" class=" img-fluid mx-auto d-inline w-25  ">
             </div>
         </div>
     </div>
@@ -213,29 +219,35 @@
     <!-- About me section starts from here -->
     <div class="container-fluid p-5" id="aboutt">
         <div class="row">
-            <div class="col-sm-3 pt-5 ">
-                <img src="profile.jpg" class=" img-fluid rounded-circle img-thumbnail ">
+            <div class="col-sm-3 pt-5 text-center "><br><br>
+                <img src="profile.jpg" class=" img-fluid rounded-circle img-thumbnail "><br>
             </div>
             <div class="col-sm-9 text-center pt-5 ">
                 <div class="" id="test1">
                     <h1 class="h1 title text-center text-white d-inline">About </h1>
                     <h1 class="h1 title text-center colour d-inline">Me</h1>
                 </div><br><br>
-                <h4 class="h4 text-center text-white ">
+                <h4 class="h4 text-center text-white container ">
                     Hey everyone! I'm Yash Kumar Sharma, a student of BE in CSE at <p
                         class="h4 text-center colour d-inline ">Chitkara University</p>, Punjab. I am a
                     passionate learner and an aspiring Data Scientist, constanty navigating through this world, in
                     search of new
                     adventures and making myself a better person that I can ever be. <br><br>
-                    I am a keen learner and my interests include arts, content writing and photography. Also, I'm the
-                    creater and founder of <p class="h4 text-center colour d-inline ">SUCHI</p>, your very own To Do
-                    List Manager, which will be avialable to you soon! Till then, Stay in touch. <br>
+                    I am a keen learner and my interests include arts, content writing and photography. I was a part of
+                    <p class="h4 text-center colour d-inline">Tech Abhivyakti 2.0 </p>, which was hosted recently, by
+                    the University, for top project teams of each particular group, where my project got critical
+                    acclaim for its impressive UI and features. Also, my work <p
+                        class="h4 text-center colour d-inline ">SUCHI</p>, your very own To Do
+                    List Manager, will be available to you soon! Till then, Stay in touch.<br>
                 </h4><br>
-                <button type="button" class="btn butt rounded-pill btn-black btn-lg "
-                    style="box-shadow: 5px 5px 10px aqua;">
-                    <a href="C:\Users\Yash\Chitkara\SUCHI\welcome_page.html" class="text-decoration-none text-white"
-                        target="_blank">Checkout SUCHI</a>
-                </button><br>
+                <div class="container">
+                    <button type="button" class="btn butt rounded-pill btn-black btn-lg "
+                        style="box-shadow: 5px 5px 10px aqua;">
+                        <a href="C:\Users\Yash\Chitkara\SUCHI\welcome_page.html" class="text-decoration-none text-white"
+                            target="_blank">Checkout SUCHI</a>
+                    </button>
+                </div>
+                <br>
             </div><br>
         </div><br>
     </div>
@@ -248,47 +260,182 @@
             </h1>
             <div class="col-sm-6 p-2 ">
                 <!-- <p class="display-1  text-white ">HTML</p> -->
-                <span class="text-white h3 ">HTML</span>
-                <i class="lni lni-html5 text-white h3  "></i>
+                <span class="text-white h3">
+                    <a href="https://www.sololearn.com/certificates/CC-ZCHY87XM" class="text-decoration-none h3 hov" target="_blank">HTML</a>
+                </span>
+                <i class="lni lni-html5 text-white h3"></i>
                 <div class="cont rounded-2 mb-4 ">
                     <div class="bars colour rounded-2 " style="width: 95%;">95%</div>
                 </div>
                 <!-- <p class="display-6 text-white ">CSS3</p> -->
-                <span class="text-white h3 ">CSS3</span>
+                <span class="text-white h3 ">
+                    <a href="#" class="text-decoration-none h3 hov" target="_blank">CSS3</a></span>
                 <i class="lni lni-css3 text-white h3  "></i>
                 <div class="cont rounded-2 mb-4 ">
                     <div class="bars colour rounded-2 " style="width: 85%;">85%</div>
                 </div>
                 <!-- <p class="display-6 text-white ">JavaScript</p> -->
-                <span class="text-white h3 ">JavaScript</span>
+                <span class="text-white h3 ">
+                    <a href="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_a23b9ab8.jpg" class="text-decoration-none h3 hov" target="_blank">JavaScript</a></span>
                 <i class="lni lni-javascript text-white h3  "></i>
                 <div class="cont rounded-2 mb-4 ">
                     <div class="bars colour rounded-2 " style="width: 65%;">65%</div>
                 </div>
-            </div>
-            <div class="col-sm-6 p-2 px-3 
-             ">
-                <!-- <p class="display-6 text-white ">Python</p> -->
-                <span class="text-white h3 ">Python</span>
-                <i class="lni lni-python text-white h3  "></i>
+                <span class="text-white h3 ">
+                    <a href="file:///C:/Users/Yash/Chitkara/SEM-2/OS/Certificate%20of%20Attendance(1).pdf" class="text-decoration-none h3 hov" target="_blank">Linux</a></span>
+                <i class="lni lni-laptop text-white h3  "></i>
                 <div class="cont rounded-2 mb-4 ">
                     <div class="bars colour rounded-2 " style="width: 95%;">95%</div>
                 </div>
+            </div>
+            <div class="col-sm-6 p-2 px-3 
+             ">
+                <span class="text-white h3 ">
+                    <a href="file:///C:/Users/Yash/OneDrive/Documents/Certificate-coding-ninjas(2).pdf" class="text-decoration-none h3 hov" target="_blank">Python</a></span>
+                <i class="lni lni-python text-white h3"></i>
+                <div class="cont rounded-2 mb-4 ">
+                    <div class="bars colour rounded-2 " style="width: 90%;">90%</div>
+                </div>
                 <!-- <p class="display-6 text-white ">C Programming</p> -->
-                <span class="text-white h3 ">C Programming</span>
+                <span class="text-white h3 ">
+                    <a href="file:///C:/Users/Yash/Chitkara/SEM-2/Programmin%20in%20C/C%20programmin(1).pdf" class="text-decoration-none h3 hov" target="_blank">C Programming</a></span>
                 <i class="lni lni-javascript text-black  h3  "></i>
                 <div class="cont rounded-2 mb-4 ">
                     <div class="bars colour rounded-2 " style="width: 90%;">90%</div>
                 </div>
                 <!-- <p class="display-6 text-white ">BootStrap</p> -->
-                <span class="text-white h3 ">BootStrap</span>
+                <span class="text-white h3 ">
+                    <a href="#" class="text-decoration-none h3 hov" target="_blank">BootStrap</a></span>
                 <i class="lni lni-bootstrap-5 text-white h3  "></i>
                 <div class="cont rounded-2 mb-4 ">
                     <div class="bars colour rounded-2 " style="width: 85%;">85%</div>
                 </div>
+                <span class="text-white h3 ">
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/A9H6FXVF3ZT4" class="text-decoration-none h3 hov" target="_blank">Cloud Computing</a></span>
+                <i class="lni lni-cloud h3 text-white  "></i>
+                <div class="cont rounded-2 mb-4 ">
+                    <div class="bars colour rounded-2 " style="width: 90%;">90%</div>
+                </div>
             </div>
         </div>
+    </div><br><br>
+    <!-- Achievement page starts from here -->
+    <div class="container-fluid ">
+        <div class="container-fluid ">
+            <h1 class="h1 text-white namee text-center ">Achievements</h1><hr>
+            <!-- HERE GOES THE CHARM  -->
+    <div class="bg-transparent ">
+        <div class="d-inline ">
+            <marquee behavior="sliding" direction="left" scrollamount="9"  style="background-image: url('footer_bg.webp');" loop="100" class="align-content-center ">
+                <img src="Certificates/5947a712-cfe7-4d62-83a7-e88bc84e0760 (1).png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/6a1b374f-5bc6-4d93-9327-a371484bc0ef.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231541.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/9dddc95c-b2e7-4efb-8222-c211935fd737.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/event_certi_image38423793c08e09840a36d80314b8bdb528cf52.jpg" class="img-fluid " style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 231156.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 234411.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231338.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_a23b9ab8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231621.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/92870812-d064-47bd-a0b8-86f711f09860.png" class="img-fluid" style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 234343.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_5d1b3db7.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.20.35_b57628a8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/5947a712-cfe7-4d62-83a7-e88bc84e0760 (1).png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/6a1b374f-5bc6-4d93-9327-a371484bc0ef.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231541.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/9dddc95c-b2e7-4efb-8222-c211935fd737.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/event_certi_image38423793c08e09840a36d80314b8bdb528cf52.jpg" class="img-fluid " style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 231156.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 234411.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231338.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_a23b9ab8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231621.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/92870812-d064-47bd-a0b8-86f711f09860.png" class="img-fluid" style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 234343.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_5d1b3db7.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.20.35_b57628a8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/5947a712-cfe7-4d62-83a7-e88bc84e0760 (1).png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/6a1b374f-5bc6-4d93-9327-a371484bc0ef.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231541.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/9dddc95c-b2e7-4efb-8222-c211935fd737.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/event_certi_image38423793c08e09840a36d80314b8bdb528cf52.jpg" class="img-fluid " style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 231156.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 234411.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231338.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_a23b9ab8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231621.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/92870812-d064-47bd-a0b8-86f711f09860.png" class="img-fluid" style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 234343.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_5d1b3db7.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.20.35_b57628a8.jpg" class="img-fluid" style="height: 250px;">
+            </marquee>
+        </div>
+        <div class="d-inline ">
+            <marquee behavior="sliding" direction="right" scrollamount="9"  style="background-image: url('footer_bg.webp');" loop="100" class="align-content-center ">
+                <img src="Certificates/5947a712-cfe7-4d62-83a7-e88bc84e0760 (1).png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/6a1b374f-5bc6-4d93-9327-a371484bc0ef.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231541.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/9dddc95c-b2e7-4efb-8222-c211935fd737.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/event_certi_image38423793c08e09840a36d80314b8bdb528cf52.jpg" class="img-fluid " style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 231156.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 234411.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231338.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_a23b9ab8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231621.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/92870812-d064-47bd-a0b8-86f711f09860.png" class="img-fluid" style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 234343.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_5d1b3db7.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.20.35_b57628a8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/5947a712-cfe7-4d62-83a7-e88bc84e0760 (1).png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/6a1b374f-5bc6-4d93-9327-a371484bc0ef.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231541.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/9dddc95c-b2e7-4efb-8222-c211935fd737.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/event_certi_image38423793c08e09840a36d80314b8bdb528cf52.jpg" class="img-fluid " style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 231156.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 234411.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231338.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_a23b9ab8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231621.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/92870812-d064-47bd-a0b8-86f711f09860.png" class="img-fluid" style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 234343.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_5d1b3db7.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.20.35_b57628a8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/5947a712-cfe7-4d62-83a7-e88bc84e0760 (1).png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/6a1b374f-5bc6-4d93-9327-a371484bc0ef.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231541.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/9dddc95c-b2e7-4efb-8222-c211935fd737.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/event_certi_image38423793c08e09840a36d80314b8bdb528cf52.jpg" class="img-fluid " style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 231156.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 234411.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231338.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_a23b9ab8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231621.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/92870812-d064-47bd-a0b8-86f711f09860.png" class="img-fluid" style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 234343.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_5d1b3db7.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.20.35_b57628a8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/5947a712-cfe7-4d62-83a7-e88bc84e0760 (1).png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/6a1b374f-5bc6-4d93-9327-a371484bc0ef.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231541.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/9dddc95c-b2e7-4efb-8222-c211935fd737.png" class="img-fluid " style="height: 250px;">
+                <img src="Certificates/event_certi_image38423793c08e09840a36d80314b8bdb528cf52.jpg" class="img-fluid " style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 231156.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 234411.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231338.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_a23b9ab8.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/Screenshot 2024-04-03 231621.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/92870812-d064-47bd-a0b8-86f711f09860.png" class="img-fluid" style="height: 250px;" >
+                <img src="Certificates/Screenshot 2024-04-03 234343.png" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.19.58_5d1b3db7.jpg" class="img-fluid" style="height: 250px;">
+                <img src="Certificates/WhatsApp Image 2024-04-03 at 23.20.35_b57628a8.jpg" class="img-fluid" style="height: 250px;">
+            </marquee>
+        </div>
     </div>
+    <!-- CHARM'S ALL DONE -->
+        </div>
+    </div>
+    <!-- Achievement page ends here -->
     <!-- <div class="bg-white" style="height: 2px;"></div> -->
     <!-- Its time for contact page -->
     <div class="container-fluid" id="connect">
@@ -327,7 +474,7 @@
                     </div><br>
                     <div class="container text-center">
                         <button class="btn butt rounded-pill btn-outline-dark  btn-lg text-white w-75  "
-                            style="box-shadow: 5px 5px 10px aqua;" type="submit">  Submit  </button>
+                            style="box-shadow: 5px 5px 10px aqua;" type="submit"> Submit </button>
                     </div>
                 </form>
             </div>
@@ -336,14 +483,18 @@
                     <h5 class="h5 text-white text-center ">Contact Details</h5><br><br>
                     <div class="col-sm-4">
                         <i class="lni lni-envelope colour"></i>
-                        <p class=" text-white">Email <br> yash@gmail.com </p></div>
+                        <p class=" text-white">Email <br> yash@gmail.com </p>
+                    </div>
                     <div class="col-sm-4">
                         <i class="lni lni-phone colour h"></i>
-                        <p class=" text-white">Phone <br> +91-81950XXXXX</p></div>
+                        <p class=" text-white">Phone <br> +91-81950XXXXX</p>
+                    </div>
                     <div class="col-sm-4">
                         <i class="lni lni-map-marker colour h"></i>
-                        <p class=" text-white">Address <br>Chandigarh, India</p></div>
-                </div><hr>
+                        <p class=" text-white">Address <br>Chandigarh, India</p>
+                    </div>
+                </div>
+                <hr>
                 <div class="container-sm p-3">
                     <h5 class="h5 text-white text-center ">Follow</h5><br>
                     <a href="https://www.instagram.com/" class="colour h2 m-3 "><i
